@@ -314,6 +314,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .skills__icon {
     width: 50px;
 }
@@ -1091,6 +1092,7 @@ svg {
     }
 }
 
+/*---- small screen phones ----*/
 @media (max-width: 680px) {
     .presentation {
         display: flex;
@@ -1109,6 +1111,10 @@ svg {
 
     .about-me__text {
         font-size: 0.8rem;
+    }
+
+    .skills__icon {
+        width: 25px;
     }
 
     .work-experience__card, .projects__book-card {
