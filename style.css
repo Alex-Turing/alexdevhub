@@ -1091,6 +1091,39 @@ svg {
     }
 }
 
+@media (max-width: 680px) {
+    .presentation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .presentation__card, .presentation__card-body {
+        width: 100%;
+    }
+
+    .social-media__card-body {
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-me__text {
+        font-size: 0.8rem;
+    }
+
+    .work-experience__card, .projects__book-card {
+        width: 90%
+    }
+
+    .projects__cover-card  {
+        width: 100%;
+    }
+
+    .contact__container {
+        width: 90%;
+    }
+}
+
 /* Base style for screens larger than 767px */
 @media (min-width: 768px) {
     /*------- Navigation Menu -------*/
