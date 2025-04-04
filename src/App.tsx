@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import githubService from './services/GithubService';
 import NavigationBar from './components/NavigationBar';
 import styled from 'styled-components';
