@@ -19,14 +19,7 @@ export interface IRepo {
   language: string;
   languages_url: string;
   description: string;
-  owner: Owner;
   languages: string[];
-}
-
-interface Owner {
-  id: number;
-  avatar_url: string;
-  followers_url: string;
 }
 
 const StyledBackground = styled.div<{ $bg: string }>`

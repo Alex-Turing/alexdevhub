@@ -41,6 +41,12 @@ const LanguageTags = ({ repo }: TagProps) => {
 
     useEffect(() => {
         const updatedTags = new Set([...repo.languages]);
+
+        if (repo.name.toLowerCase() === "alexdevhub") {
+            updatedTags.add("react");
+            updatedTags.add("nodedotjs");
+        }
+
         Object.keys(keywordToTagMap).forEach(keyword => {
             const regex = new RegExp(`\\b${keyword}\\b`, 'i');
             if(regex.test(repo.name)) {

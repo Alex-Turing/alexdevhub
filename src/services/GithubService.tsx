@@ -1,17 +1,17 @@
 import axios from 'axios';
 import { IRepo } from '@/App';
 
-const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
-const GITHUB_URL = import.meta.env.VITE_GITHUB_URL
+const BASE_URL = 'http://localhost:5000/api/github';
 
-const getAll = () => {
-    const request = axios.get<IRepo[]>(`${GITHUB_URL}`, { headers: { Authorization: `token ${GITHUB_TOKEN}` } });
-    return request.then(response => response.data as IRepo[]);
+const getAll = async () => {
+    const response = await axios.get<IRepo[]>(`${BASE_URL}/repos`);
+    return response.data as IRepo[];
 };
 
-const getLanguages = (url:string) => {
-    const request = axios.get<string[]>(url, { headers: { Authorization: `token ${GITHUB_TOKEN}` } });   
-    return request.then(response => response.data as string[]);
+const getLanguages = async (url:string) => {
+    const repoName = url.split('/').slice(-2, -1)[0]; // Extract repo name
+    const response = await axios.get<string[]>(`${BASE_URL}/repos/${repoName}/languages`);   
+    return response.data as string[];
 }
 
 export default { getAll, getLanguages }

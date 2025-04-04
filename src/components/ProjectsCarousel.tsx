@@ -20,7 +20,7 @@ const ProjectsCarousel = ({ repos }: CarouselProps) => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        whileHover={{ scale: 1.05, boxShadow: "0px 0px 10px rgba(59, 130, 246, 0.5)" }}
+                        whileHover={{ borderRadius: "20px", scale: 1.05, boxShadow: "0px 0px 10px rgba(59, 130, 246, 0.5)" }}
                         whileTap={{ scale: 0.98 }}
                     >
                         <ProjectInfoCard repos={[repo]} />
