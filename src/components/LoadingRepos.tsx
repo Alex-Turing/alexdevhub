@@ -13,7 +13,7 @@ const StyledLoadingImage = styled.img`
 const LoadingRepos = () => {
     return (
         <StyledLoadingContainer>
-            <StyledLoadingImage src="/alexdevhub/img/loading.gif" alt="loading gif" />
+            <StyledLoadingImage src="/img/loading.gif" alt="loading gif" />
         </StyledLoadingContainer>
     );
 };

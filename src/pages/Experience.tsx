@@ -7,7 +7,7 @@ const experienceData = [
         company: "Lincoln Electric",
         role: "Software Developer Intern",
         description: "Full Stack .NET Developer",
-        logo: '/alexdevhub/img/le_logo.png',
+        logo: '/img/le_logo.png',
         details: [
             "Developed a REST API using ASP.NET and Entity Framework Core, significantly improving troubleshooting efficiency. Created unit tests and documentation to ensure reliable, repeatable functionality.",
             "Built a WinForms tool to read, classify, and filter VersaFAB logs, dramatically enhancing the engineering team’s ability to diagnose and debug plasma cutting robot issues swiftly.",
@@ -22,7 +22,7 @@ const experienceData = [
         company: "Aerospace and Defense / Test & Measurement Account Engineer",
         role: "RF Engineer",
         description: "RF Engineer",
-        logo: '/alexdevhub/img/rs_logo.png',
+        logo: '/img/rs_logo.png',
         details: [
             "Partnered with application engineers to gather user requirements and deliver Latin America’s first 5G FR1 and FR2 device test lab for Claro Colombia, setting a new benchmark in the region.",
             "Led the design and deployment of Colombia’s first spectrum-monitoring drone for the National Spectrum Agency, advancing national capabilities in spectrum management.",

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { IRepo } from '@/App';
 
-const BASE_URL = 'http://localhost:5000/api/github';
+const BASE_URL = 'api/github'; //'http://localhost:3001/api/github';
 
 const getAll = async () => {
     const response = await axios.get<IRepo[]>(`${BASE_URL}/repos`);
